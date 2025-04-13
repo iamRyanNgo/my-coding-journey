@@ -38,83 +38,10 @@ header p {
   font-size: 1.1rem;
 }
 
-section {
-  margin-top: 60px;
-}
-
-section h2 {
-  color: var(--lavender);
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--lavender);
-  display: inline-block;
-}
-
-.project {
-  background: #1b1b2b;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.project h3 {
-  margin-top: 0;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill {
-  background: #2b2b3d;
-  padding: 10px 16px;
-  border-radius: 999px;
-  font-size: 0.95rem;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 10px 10px 0 0;
-  padding: 12px 20px;
-  border-radius: 8px;
-  background: var(--lavender);
-  color: #0f0f1a;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-.contact a:hover {
-  background: #d1a9ff;
-}
 .hero-buttons {
   margin-top: 30px;
 }
 
 .hero-buttons .btn {
   display: inline-block;
-  padding: 12px 24px;
-  border-radius: 8px;
-  background: var(--lavender);
-  color: #0f0f1a;
-  font-weight: bold;
-  margin: 0 10px 10px 0;
-  transition: background 0.2s ease;
-}
-
-.hero-buttons .btn:hover {
-  background: #d1a9ff;
-}
-
-.hero-buttons .btn.secondary {
-  background: transparent;
-  border: 2px solid var(--lavender);
-  color: var(--lavender);
-}
-
-.hero-buttons .btn.secondary:hover {
-  background: var(--lavender);
-  color: #0f0f1a;
-}
-
+  padding: 12px
