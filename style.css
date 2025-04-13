@@ -45,3 +45,19 @@ header p {
 .hero-buttons .btn {
   display: inline-block;
   padding: 12px
+}
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid var(--lavender);
+  box-shadow: 0 0 20px 4px rgba(182, 147, 253, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  box-shadow: 0 0 30px 6px rgba(182, 147, 253, 0.6);
+}
+
