@@ -1,13 +1,14 @@
 :root {
   --lavender: #b693fd;
-  --bg: #0f0f1a;
-  --text: #f4f4f5;
-  --muted: #a1a1aa;
+  --bg-dark: #2b2d31;
+  --surface: #313338;
+  --muted: #a3a6b1;
+  --text: #f2f3f5;
 }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--bg-dark);
   color: var(--text);
   font-family: 'Segoe UI', sans-serif;
 }
@@ -23,12 +24,11 @@ a {
   padding: 40px 20px;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1a1a2b;
+  background: var(--surface);
   padding: 20px;
   position: sticky;
   top: 0;
@@ -72,7 +72,7 @@ a {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #1a1a2b;
+    background: var(--surface);
     position: absolute;
     top: 60px;
     right: 20px;
@@ -86,7 +86,6 @@ a {
   }
 }
 
-/* Hero Layout */
 .header-left {
   display: flex;
   align-items: center;
@@ -108,9 +107,9 @@ a {
 .hero-buttons .btn {
   display: inline-block;
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 999px;
   background: var(--lavender);
-  color: #0f0f1a;
+  color: var(--bg-dark);
   font-weight: bold;
   margin: 0 10px 10px 0;
   transition: background 0.2s ease;
@@ -128,18 +127,17 @@ a {
 
 .hero-buttons .btn.secondary:hover {
   background: var(--lavender);
-  color: #0f0f1a;
+  color: var(--bg-dark);
 }
 
-/* Profile Pic */
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
   border: 3px solid var(--lavender);
-  box-shadow: 0 0 20px 4px rgba(182, 147, 253, 0.4);
+  box-shadow: 0 0 20px 4px rgba(182, 147, 253, 0.3);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
   animation: fadeIn 1.4s ease-out;
 }
@@ -149,7 +147,6 @@ a {
   transform: scale(1.05);
 }
 
-/* Sections */
 section {
   margin-top: 60px;
 }
@@ -163,7 +160,7 @@ section h2 {
 }
 
 .project {
-  background: #1b1b2b;
+  background: var(--surface);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
@@ -180,7 +177,7 @@ section h2 {
 }
 
 .skill {
-  background: #2b2b3d;
+  background: #404249;
   padding: 10px 16px;
   border-radius: 999px;
   font-size: 0.95rem;
@@ -190,9 +187,9 @@ section h2 {
   display: inline-block;
   margin: 10px 10px 0 0;
   padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: 999px;
   background: var(--lavender);
-  color: #0f0f1a;
+  color: var(--bg-dark);
   font-weight: bold;
   transition: background 0.2s;
 }
@@ -201,7 +198,6 @@ section h2 {
   background: #d1a9ff;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
