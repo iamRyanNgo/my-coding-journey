@@ -1,49 +1,90 @@
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f4f6;
-      margin: 0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-    }
-    h1, h2, h5 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-    }
-    .card {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .card h2 {
-      margin: 0;
-      font-size: 1.25rem;
-    }
-    .card p.date {
-      color: #6b7280;
-      font-size: 0.9rem;
-      margin: 5px 0;
-    }
-    .button-container {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .btn {
-      padding: 10px 24px;
-      border: none;
-      background-color: #3b82f6;
-      color: white;
-      border-radius: 12px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background-color: #2563eb;
-    }
-  </style>
+:root {
+  --lavender: #b693fd;
+  --bg: #0f0f1a;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--lavender);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  padding: 60px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+section {
+  margin-top: 60px;
+}
+
+section h2 {
+  color: var(--lavender);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--lavender);
+  display: inline-block;
+}
+
+.project {
+  background: #1b1b2b;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #2b2b3d;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: var(--lavender);
+  color: #0f0f1a;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.contact a:hover {
+  background: #d1a9ff;
+}
