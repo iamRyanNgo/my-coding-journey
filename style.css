@@ -62,4 +62,18 @@ header p {
   box-shadow: 0 0 30px 10px rgba(182, 147, 253, 0.6);
   transform: scale(1.05);
 }
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 60px 0;
+  animation: fadeIn 1s ease-out;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
 
