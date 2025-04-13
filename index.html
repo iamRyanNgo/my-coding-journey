@@ -2,48 +2,148 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Coding Journey</title>
-  <!-- Bootstrap CSS via CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan Ngo – Developer Portfolio</title>
+  <style>
+    :root {
+      --lavender: #b693fd;
+      --bg: #0f0f1a;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+    }
 
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    a {
+      color: var(--lavender);
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    section {
+      margin-top: 60px;
+    }
+
+    section h2 {
+      color: var(--lavender);
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--lavender);
+      display: inline-block;
+    }
+
+    .project {
+      background: #1b1b2b;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #2b2b3d;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: var(--lavender);
+      color: #0f0f1a;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .contact a:hover {
+      background: #d1a9ff;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Coding Journey</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav ms-auto">
-           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-         </ul>
+  <div class="container">
+    <header>
+      <h1>Ryan Ngo</h1>
+      <p>Full Stack Developer • Building beautiful, functional web experiences</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Hi! I'm Ryan, a passionate developer who loves turning ideas into real products. I'm focused on front-end frameworks, clean code, and continuous learning. Let's build something awesome together.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>This site! Built using HTML, CSS, and hosted with GitHub Pages. Fully custom, responsive, and minimal.</p>
       </div>
-    </div>
-  </nav>
+      <div class="project">
+        <h3>To-Do List App</h3>
+        <p>A JavaScript app for managing tasks with local storage, themes, and filters.</p>
+      </div>
+      <div class="project">
+        <h3>Weather Dashboard</h3>
+        <p>React app that fetches real-time weather data and displays it beautifully using OpenWeatherMap API.</p>
+      </div>
+    </section>
 
-  <!-- Main Content -->
-  <div class="container my-5">
-    <h1 class="mb-4">Welcome to My Coding Journey</h1>
-    <p>
-      Hello! I’m excited to share my coding journey with you. Here you will find my resume, along with some projects that demonstrate my skills and interests. Feel free to explore and learn more about my background, experiences, and the exciting projects I’ve worked on.
-    </p>
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Tailwind</span>
+        <span class="skill">Git</span>
+        <span class="skill">GitHub Pages</span>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <a href="mailto:you@example.com">Email Me</a>
+      <a href="https://github.com/iamryanngo" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    </section>
   </div>
-
-  <!-- Footer -->
-  <footer class="bg-light py-3">
-    <div class="container text-center">
-      <p>&copy; 2025 My Coding Journey. All rights reserved.</p>
-    </div>
-  </footer>
-  
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-,
