@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,9 +8,12 @@
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar glass">
     <div class="logo">Ryan</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-right">
+      <button id="theme-toggle" title="Toggle Light/Dark Mode">🌙</button>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -21,7 +24,7 @@
 
   <div class="container">
     <header class="header-left">
-      <img src="Profile.png" alt="Ryan Ngo" class="profile-pic" />
+      <img src="profile.jpg" alt="Ryan Ngo" class="profile-pic" />
       <div class="hero-content">
         <h1>Ryan Ngo</h1>
         <p>Full Stack Developer • Building beautiful, functional web experiences</p>
@@ -74,13 +77,39 @@
     </section>
   </div>
 
+  <button id="scrollToTop" title="Back to top">↑</button>
+
   <script>
     const toggle = document.getElementById('menu-toggle');
     const links = document.getElementById('nav-links');
+    const scrollBtn = document.getElementById('scrollToTop');
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
 
     toggle.addEventListener('click', () => {
       links.classList.toggle('show');
     });
+
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    themeToggle.addEventListener('click', () => {
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      themeToggle.textContent = html.dataset.theme === 'dark' ? '🌙' : '☀️';
+      localStorage.setItem('theme', html.dataset.theme);
+    });
+
+    // Load saved theme
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      html.dataset.theme = saved;
+      themeToggle.textContent = saved === 'dark' ? '🌙' : '☀️';
+    }
   </script>
 </body>
 </html>
